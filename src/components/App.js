@@ -4,7 +4,7 @@ import { Spring } from 'react-spring/renderprops';
 import ReactCardFlip from 'react-card-flip';
 import FrontCard from "./FrontCard";
 import BackCard from "./BackCard";
-import ProfileImage from "../assets/images/avatar.jpg";
+// import ProfileImage from "../assets/images/avatar.jpg";
 import { Envelope, Telephone, Linkedin, Github, Camera } from 'react-bootstrap-icons';
 
 
@@ -48,7 +48,6 @@ function App() {
         // setIsFlipped(false)
         break;
     }
-
   }
 
   return (
@@ -73,12 +72,12 @@ function App() {
 
                   {/* Card Flip  */}
                   <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" flipSpeedBackToFront="1.8" flipSpeedFrontToBack="1.8">
-                    {/*                      
+                                         
                         <FrontCard
                           handleEvent={handleEvent} />
                         <BackCard
-                          handleEvent={handleEvent} /> */}
-                    <div className="front-card" onClick={handleEvent} onMouseEnter={handleEvent} onMouseLeave={handleEvent}>
+                          handleEvent={handleEvent} />
+                    {/* <div className="front-card" onClick={handleEvent} onMouseEnter={handleEvent} onMouseLeave={handleEvent}>
                       <img src={ProfileImage} alt="Avatar"
                         style={{ width: "100%", height: "100%", objectFit: "cover", filter: "grayscale(70%)" }} />
 
@@ -90,9 +89,9 @@ function App() {
                             - Master Yi
                           </p>
                       </div>
-                    </div>
+                    </div> */}
 
-                    <div className="back-card" onClick={handleEvent} onMouseEnter={handleEvent} onMouseLeave={handleEvent}>
+                    {/* <div className="back-card" onClick={handleEvent} onMouseEnter={handleEvent} onMouseLeave={handleEvent}>
 
                       <div className="back-content">
                         <h4>Web & Mobile App Development</h4>
@@ -109,7 +108,7 @@ function App() {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
 
                   </ReactCardFlip>
 
@@ -136,7 +135,6 @@ function App() {
           </div>
         </div>
       )}
-
     </Spring>
 
   );
