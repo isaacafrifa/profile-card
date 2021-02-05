@@ -16,17 +16,17 @@ function App() {
   //Set Timing for Progress Spinner
   setTimeout(() => {
     setIsLoading(false)
-  }, 1000);
+  }, 2000);
 
   //Initial flip effect
   useEffect(() => {
     setTimeout(() => {
       setIsFlipped(true)
-    }, 2000);
+    }, 3000);
 
     setTimeout(() => {
       setIsFlipped(false)
-    }, 4000);
+    }, 5000);
   }, []);  /* "[]" trigger useEffect only during initial render */
 
   const handleEvent = (event) => {
@@ -77,39 +77,7 @@ function App() {
                           handleEvent={handleEvent} />
                         <BackCard
                           handleEvent={handleEvent} />
-                    {/* <div className="front-card" onClick={handleEvent} onMouseEnter={handleEvent} onMouseLeave={handleEvent}>
-                      <img src={ProfileImage} alt="Avatar"
-                        style={{ width: "100%", height: "100%", objectFit: "cover", filter: "grayscale(70%)" }} />
-
-                      <div className="front-content">
-                        <h2>Isaac Afrifa </h2>
-                        <h4>Software Engineer</h4>
-                        <p className="font-italic">
-                          "A true master is an eternal student"<br />
-                            - Master Yi
-                          </p>
-                      </div>
-                    </div> */}
-
-                    {/* <div className="back-card" onClick={handleEvent} onMouseEnter={handleEvent} onMouseLeave={handleEvent}>
-
-                      <div className="back-content">
-                        <h4>Web & Mobile App Development</h4>
-                        <div className="comp1">
-                          <ul>
-                            <li><b>Languages: </b> <span className="font-italic">Java, Javascipt, SQL & Kotlin</span></li>
-                            <li><b>Technologies: </b> <span className="font-italic">Spring Boot, Android, React, CI/CD & Docker</span></li>
-                            <li><b>Architectures: </b> <span className="font-italic">REST, Microservices & Monoliths</span></li>
-                            <li><b>Other Skills: </b> <span className="font-italic">Digital Forensics, Photography & Team Player</span></li>
-                          </ul>
-
-                          <div className="comp2">
-
-                          </div>
-                        </div>
-                      </div>
-                    </div> */}
-
+              
                   </ReactCardFlip>
 
                 </Col>

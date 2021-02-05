@@ -68,9 +68,9 @@ code {
   margin-right: auto;} */
 
 .front-card {
-  background-color: green;
-  height: 50vh;
-  min-height: 50%; /* Fallback for browsers do NOT support vh unit */
+  background-color: transparent;
+  height: 60vh;
+  min-height: 60%; /* Fallback for browsers do NOT support vh unit */
   color: "#fff";
   display: "flex";
   justify-content: "center";
@@ -115,9 +115,9 @@ code {
 }
 
 .back-card {
-  background-color: red;
-  height: 50vh;
-  min-height: 50%; /*Fallback for browsers do NOT support vh unit */
+  background-color: transparent;
+  height: 60vh;
+  min-height: 60%; /*Fallback for browsers do NOT support vh unit */
   color: "#fff";
   display: "flex";
   justify-content: "center";
@@ -148,7 +148,28 @@ code {
 .comp1 {
   font-size: 14px;
   text-align: left;
+  margin-left: 5%;
 }
+/* code-like css */
+.space {
+  margin-left: 2rem;
+}
+.blue {
+  color: #29b6f6;
+}
+.green {
+  color: #9ccc65;
+}
+.purple {
+  color: #ba68c8;
+}
+.cyan {
+  color: #4dd0e1;
+}
+.red {
+  color: #ef5350;
+}
+
 .comp3 {
   text-align: center;
   margin-top: 10%;
