@@ -16,17 +16,17 @@ function App() {
   //Set Timing for Progress Spinner
   setTimeout(() => {
     setIsLoading(false)
-  }, 2000);
+  }, 4000);
 
   //Initial flip effect
   useEffect(() => {
     setTimeout(() => {
       setIsFlipped(true)
-    }, 3000);
+    }, 5000);
 
     setTimeout(() => {
       setIsFlipped(false)
-    }, 5000);
+    }, 7000);
   }, []);  /* "[]" trigger useEffect only during initial render */
 
   const handleEvent = (event) => {
@@ -87,7 +87,6 @@ function App() {
               <Row>
                 <Col md={{ span: 6, offset: 3 }}>
                   <div className="comp3">
-                    <a className="icon-box" href="tel:+233277599576"><Telephone size={24} /></a>
                     <a className="icon-box" href="mailto:isaac.afrifa3@yahoo.com"><Envelope size={24} /></a>
                     <a className="icon-box" href="https://www.linkedin.com/in/isaac-afrifa-9aa543106"><Linkedin size={24} /></a>
                     <a className="icon-box" href="https://bitbucket.org/mrblo"><Github size={24} /></a>

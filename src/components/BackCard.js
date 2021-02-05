@@ -6,13 +6,7 @@ const BackCard = (props) => {
       <div className="back-content">
         <h4>Web & Mobile App Development</h4>
         <div className="comp1">
-          {/* <ul>
-            <li><b>Languages: </b> <span className="font-italic">Java, Javascipt, SQL & Kotlin</span></li>
-            <li><b>Technologies: </b> <span className="font-italic">Spring Boot, Android, React, CI/CD & Docker</span></li>
-            <li><b>Architectures: </b> <span className="font-italic">REST, Microservices & Monoliths</span></li>
-            <li><b>Other Skills: </b> <span className="font-italic">Digital Forensics, Photography & Team Player</span></li>
-          </ul> */}
-
+        
           <p><span className="purple">const </span> mySkills <span className="cyan">=</span>  {'{'}
             <br />
             <span className="space red">languages</span>
@@ -33,7 +27,21 @@ const BackCard = (props) => {
 
 
           <div className="comp2">
-
+  
+      {/* <ul>
+            <li><b>Recent Projects: </b><br/>
+             <span className="font-italic">“Read’E”- Android App </span></li> 
+             <dl>
+  <dt>Read’E</dt>
+  <dd>- Android News App</dd>
+  <dt>CLR</dt>
+  <dd>- Web Authentication App</dd>
+  <dt>"An Evaluation of Data Erasing Tools"</dt>
+  <dd>- Forensics Research Paper</dd>
+  <dt>Lion King Premiere</dt>
+  <dd>- Adobe-UK Black Employee Network Meetup </dd>
+</dl>
+          </ul>     */}
           </div>
         </div>
       </div>
