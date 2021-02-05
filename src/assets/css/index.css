@@ -26,6 +26,8 @@ code {
 .App {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url("../images/background.jpg") no-repeat center fixed;
+
+  /* background-image: linear-gradient(to bottom, #FDF2E9, grey, #1c1c1c); */
   background-size: cover;
   height: 115vh;
 }
@@ -69,8 +71,8 @@ code {
 
 .front-card {
   background-color: transparent;
-  height: 60vh;
-  min-height: 60%; /* Fallback for browsers do NOT support vh unit */
+  height: 50vh;
+  min-height: 50%; /* Fallback for browsers do NOT support vh unit */
   color: "#fff";
   display: "flex";
   justify-content: "center";
@@ -116,8 +118,8 @@ code {
 
 .back-card {
   background-color: transparent;
-  height: 60vh;
-  min-height: 60%; /*Fallback for browsers do NOT support vh unit */
+  height: 50vh;
+  min-height: 50%; /*Fallback for browsers do NOT support vh unit */
   color: "#fff";
   display: "flex";
   justify-content: "center";
@@ -129,12 +131,14 @@ code {
   -webkit-box-shadow: 0 0 10px rgb(235, 129, 43);
   -moz-box-shadow: 0 0 10px rgb(200, 255, 0);
   box-shadow: 0 0 10px rgb(209, 110, 17), 5px 5px 2px grey;
-  /* height:fit-content;  */
+  overflow: auto; 
 }
 
 .back-content {
   text-align: center;
   padding: 20px;
+  /* font-size : 1.7vh; */
+  font-size: 1em;
 }
 
 .back-content h4 {
@@ -146,7 +150,6 @@ code {
   list-style-type: circle;
 }
 .comp1 {
-  font-size: 14px;
   text-align: left;
   margin-left: 5%;
 }

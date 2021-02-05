@@ -5,7 +5,7 @@ import ReactCardFlip from 'react-card-flip';
 import FrontCard from "./FrontCard";
 import BackCard from "./BackCard";
 // import ProfileImage from "../assets/images/avatar.jpg";
-import { Envelope, Telephone, Linkedin, Github, Camera } from 'react-bootstrap-icons';
+import { Envelope, Linkedin, Github, Camera } from 'react-bootstrap-icons';
 
 
 function App() {
