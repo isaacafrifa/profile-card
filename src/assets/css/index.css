@@ -5,7 +5,6 @@ body {
     monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   align-items: center;
   color: white;
   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -73,10 +72,7 @@ code {
   background-color: transparent;
   height: 50vh;
   min-height: 50%; /* Fallback for browsers do NOT support vh unit */
-  color: "#fff";
-  display: "flex";
-  justify-content: "center";
-  align-items: "center";
+
   /* box-shadow: 1px 1px 0px grey, 2px 2px 0px grey, 3px 3px 0px grey,
     4px 4px 0px grey, 5px 5px 0px grey, 6px 6px 0px grey; */
 
@@ -100,8 +96,6 @@ code {
 }
 .avatar img {
   width: 80%;
-  /*height: 50%; */
-  /* height:40vh; */
 
   border-radius: 2%;
   filter: grayscale(70%);
@@ -120,10 +114,6 @@ code {
   background-color: transparent;
   height: 50vh;
   min-height: 50%; /*Fallback for browsers do NOT support vh unit */
-  color: "#fff";
-  display: "flex";
-  justify-content: "center";
-  align-items: "center";
   color: #ffffff;
   font-family: Arial;
   background: #1c1c1c;
@@ -131,7 +121,8 @@ code {
   -webkit-box-shadow: 0 0 10px rgb(235, 129, 43);
   -moz-box-shadow: 0 0 10px rgb(200, 255, 0);
   box-shadow: 0 0 10px rgb(209, 110, 17), 5px 5px 2px grey;
-  overflow: auto; 
+  overflow: auto;  
+ 
 }
 
 .back-content {
@@ -139,6 +130,7 @@ code {
   padding: 20px;
   /* font-size : 1.7vh; */
   font-size: 1em;
+  margin-top: 7%;
 }
 
 .back-content h4 {

@@ -28,20 +28,6 @@ const BackCard = (props) => {
 
           <div className="comp2">
   
-      {/* <ul>
-            <li><b>Recent Projects: </b><br/>
-             <span className="font-italic">“Read’E”- Android App </span></li> 
-             <dl>
-  <dt>Read’E</dt>
-  <dd>- Android News App</dd>
-  <dt>CLR</dt>
-  <dd>- Web Authentication App</dd>
-  <dt>"An Evaluation of Data Erasing Tools"</dt>
-  <dd>- Forensics Research Paper</dd>
-  <dt>Lion King Premiere</dt>
-  <dd>- Adobe-UK Black Employee Network Meetup </dd>
-</dl>
-          </ul>     */}
           </div>
         </div>
       </div>
