@@ -22,11 +22,11 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsFlipped(true)
-    }, 5000);
+    }, 6000);
 
     setTimeout(() => {
       setIsFlipped(false)
-    }, 7000);
+    }, 8000);
   }, []);  /* "[]" trigger useEffect only during initial render */
 
   const handleEvent = (event) => {
