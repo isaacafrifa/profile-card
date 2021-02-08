@@ -13,7 +13,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true)
   const [isFlipped, setIsFlipped] = useState(false)
 
-  //Set Timing for Progress Spinner
+  //Set Timing for ProgressSpinner
   setTimeout(() => {
     setIsLoading(false)
   }, 4000);
@@ -26,7 +26,7 @@ function App() {
 
     setTimeout(() => {
       setIsFlipped(false)
-    }, 8000);
+    }, 7500);
   }, []);  /* "[]" trigger useEffect only during initial render */
 
   const handleEvent = (event) => {
@@ -41,7 +41,6 @@ function App() {
 
       case "click":
         isFlipped ? setIsFlipped(false) : setIsFlipped(true)
-        // console.log("clicked");
         break;
 
       default:
@@ -52,15 +51,15 @@ function App() {
 
   return (
     <Spring
-      // fade in effect
-      from={{ opacity: 0 }}
-      to={{ opacity: 1 }}>
+      // fade in and slide effect
+      from={{ opacity: 0,marginLeft: -500  }}
+      to={{ opacity: 1,marginLeft: 0  }}>
 
       {props => (
         <div style={props}>
           <div className="App">
             <Container>
-              {/* Show Progress Spinner */}
+              {/* Show ProgressSpinner */}
               {isLoading && (
                 <div className="mycentered">
                   <Spinner animation="border" variant="info" />
@@ -83,7 +82,6 @@ function App() {
                 </Col>
               </Row>
 
-
               <Row>
                 <Col md={{ span: 6, offset: 3 }}>
                   <div className="comp3">
@@ -94,8 +92,6 @@ function App() {
                   </div>
                 </Col>
               </Row>
-
-
 
             </Container>
 
