@@ -44,7 +44,7 @@ function App() {
         break;
 
       default:
-        // setIsFlipped(false)
+        setIsFlipped(false)
         break;
     }
   }
