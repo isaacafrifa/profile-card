@@ -15,6 +15,10 @@ html,
 body {
   margin: 0px;
   height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../images/background.jpg") no-repeat center fixed;
+  background-size: cover;
 }
 
 code {
@@ -23,21 +27,19 @@ code {
 }
 
 .App {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("../images/background.jpg") no-repeat center fixed;
-
   /* background-image: linear-gradient(to bottom, #FDF2E9, grey, #1c1c1c); */
   background-size: cover;
-  height: 100vh;
-}
-
-.mycentered {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .front-card {
   background-color: transparent;
@@ -67,7 +69,6 @@ code {
 }
 .avatar img {
   width: 80%;
-
   border-radius: 2%;
   filter: grayscale(70%);
 }
@@ -87,28 +88,28 @@ code {
   min-height: 50%; /*Fallback for browsers do NOT support vh unit */
   color: #ffffff;
   font-family: Arial;
+  font-size: 16px;
   background: #1c1c1c;
   /* Glow effect */
   -webkit-box-shadow: 0 0 10px rgb(235, 129, 43);
   -moz-box-shadow: 0 0 10px rgb(200, 255, 0);
   box-shadow: 0 0 10px rgb(209, 110, 17), 5px 5px 2px grey;
-  overflow: auto;  
-  position: relative;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .back-content {
   text-align: center;
-  padding: 20px;
-  /* font-size : 1.7vh; */
-  /* font-size: 1em; */
-  margin: 7%;
-  position: absolute;
-  top: 50%;
+  padding: 16px;
+  font-size: 16px;
 }
 
 .back-content h4 {
   border-bottom: 2px solid white;
-  padding-bottom: 10px;
+  margin: 25px 0 5px 0;
+  /* font-size: 22px; */
 }
 
 .back-content ul {
@@ -116,7 +117,7 @@ code {
 }
 .comp1 {
   text-align: left;
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 /* code-like css */
 .space {
@@ -140,7 +141,11 @@ code {
 
 .comp3 {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 1rem;
+}
+.comp4 {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .icon-box {
@@ -148,9 +153,9 @@ code {
   position: relative;
   color: white;
   /* font-size: 24px; */
-  height: 40px;
-  width: 40px;
-  padding: 5px;
+  height: 35px;
+  width: 35px;
+  padding: 2px;
   display: inline-block;
   border: 2px solid white;
   margin: 5px;
@@ -166,6 +171,105 @@ code {
 }
 
 .icon-box:hover {
-  box-shadow: inset 0 50px 0 0 teal;
+  box-shadow: inset 0 50px 0 0 #428bca;
   color: white;
+}
+
+/*--------------------------------------------------------------
+                  # GIFT EFFECTS
+--------------------------------------------------------------*/
+
+.giftButton {
+  animation: sidetoside 0.3s ease-in 6;
+}
+
+@keyframes sidetoside {
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.mytooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.mytooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.mytooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*--------------------------------------------------------------
+                  # DEVICES
+--------------------------------------------------------------*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .back-content {
+    font-size: 0.8em;
+    margin: 0;
+  }
+  .back-content h4 {
+    font-size: 1.5em;
+  }
+}
+/* Extra small devices with landscape (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) and (orientation: landscape)  {
+  .back-content{
+    font-size: 0.7em;
+    margin: 0;
+  }
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .back-content {
+    font-size: 1em;
+    margin-top: 3rem;
+  }
+  .back-content h4 {
+    font-size: 1.5em;
+    border-bottom: 1px solid white;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .back-content {
+    font-size: 0.7em;
+    margin-top: 2rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .back-content {
+    font-size: 1.2em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .back-content {
+    font-size: 1.2em;
+  }
 }
