@@ -32,6 +32,8 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  overflow: hidden;
 }
 
 .loader {
@@ -209,9 +211,9 @@ code {
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px;
+  top: -5px;
+  left: 105%;
+
 }
 
 .mytooltip:hover .tooltiptext {
