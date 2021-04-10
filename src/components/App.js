@@ -73,11 +73,6 @@ function App() {
           <div className="loader">
             <Spinner animation="border" variant="info" />
           </div>
-
-          //     <div className="loader-background">
-          //     <img src={Loader} className="img-fluid" alt="pic" />
-          //   Loading
-          // </div>
         ) :
           (
             /* --- MAIN CONTENT --- */
