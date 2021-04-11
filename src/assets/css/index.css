@@ -1,9 +1,9 @@
-:root{
+:root {
   --backgroundColor: black;
   --textColor: #f7fafc;
   --secondary-color: #2a556f40;
 }
-
+html,
 body {
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
     "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
@@ -13,18 +13,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   align-items: center;
   color: var(--textColor);
-  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/card_img.png") no-repeat center fixed;
-  background-size: cover; */
-}
-html,
-body {
   margin: 0px;
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url("../images/background.jpg") no-repeat center fixed;
   background-size: cover;
-  background-color:  var(--backgroundColor);
+  background-color: var(--backgroundColor);
 }
 
 code {
@@ -35,7 +29,7 @@ code {
 .App {
   /* background-image: linear-gradient(to bottom, #FDF2E9, grey, #1c1c1c); */
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,7 +214,6 @@ code {
   z-index: 1;
   top: -5px;
   left: 105%;
-
 }
 
 .mytooltip:hover .tooltiptext {
