@@ -182,7 +182,10 @@ code {
 --------------------------------------------------------------*/
 
 .giftButton {
-  animation: sidetoside 0.3s ease-in 6;
+  animation: sidetoside 0.3s ease-in 20;
+}
+.giftButton:hover{
+  animation-play-state: paused;
 }
 
 @keyframes sidetoside {

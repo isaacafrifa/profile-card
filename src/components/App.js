@@ -5,7 +5,7 @@ import ReactCardFlip from 'react-card-flip';
 import FrontCard from "./FrontCard";
 import BackCard from "./BackCard";
 // import ProfileImage from "../assets/images/avatar.jpg";
-import { Envelope, Linkedin, Github, Camera, Gift } from 'react-bootstrap-icons';
+import { Envelope, Linkedin, Github, Camera, Gift, Globe } from 'react-bootstrap-icons';
 
 
 function App() {
@@ -100,6 +100,7 @@ function App() {
                 <Row>
                   <Col md={{ span: 6, offset: 3 }}>
                     <div className="comp3">
+                      <a className="icon-box" href="https://www.isaacafrifa.com"><Globe size={24} /></a>
                       <a className="icon-box" href="mailto:isaac.afrifa3@yahoo.com"><Envelope size={24} /></a>
                       <a className="icon-box" href="https://www.linkedin.com/in/isaac-afrifa-9aa543106"><Linkedin size={24} /></a>
                       <a className="icon-box" href="https://bitbucket.org/mrblo"><Github size={24} /></a>
@@ -116,7 +117,9 @@ function App() {
                   <div className="comp4">
                     <div class="mytooltip">
                       <Gift className="giftButton" color="#428bca" size={48} />
-                      <span class="tooltiptext">Portfolio Site Coming Soon</span>
+                      <span class="tooltiptext">Portfolio Site is Ready!
+                      <a href="https://www.isaacafrifa.com"> Click here</a>
+                      </span>
                     </div>
                   </div>
                 </Col>
